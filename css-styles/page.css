@@ -1,0 +1,310 @@
+.page-grid{
+  display: grid;
+  grid-template-columns: 1.32fr 1fr;
+  column-gap: 20px;
+  z-index: 0;
+}
+
+.section-1{
+  height: 130px;
+  padding: 7px 0 0 15px;
+  display: flex;
+  border: 1px solid rgba(195, 195, 195, 0.178);
+}
+
+.profile-image-container{
+  margin-right: 8px;
+  width: 44px;
+  padding-top: 14px;
+  cursor: pointer;
+}
+
+.image-container{
+  width: 42.5px;
+  height: 40px;
+  border-radius: 20px;
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.profile-image{
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/*create a div exactly the form of img style with pseudo-class (::after) 
+to add a black overlay to an img*/
+.image-container::after{
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.image-container:hover::after{
+  background-color: rgba(0, 0, 0, 0.201);
+}
+
+.post-grid-container{
+  width: 583.667px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-input-container{
+  padding: 18px 2px 14px 0;
+  height: 32.5px;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.tweet-input{
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, sans-serif, Arial;
+  font-size: 21.5px;
+  height: 25px;
+  color: rgb(83, 100, 113);
+  border: none;
+  outline: none;
+}
+
+.tweet-add-on-container{
+  flex: 1;
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.tweet-add-on{
+  width: 496.781px;
+  height: 38px;
+  padding: 2px;
+  margin-top: 10px;
+  display: flex;
+  align-items: end;
+}
+
+.tweet-add-option{
+  width: 34px;
+  height: 34px;
+  border: none;
+  margin-right: 3px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background: transparent;
+}
+
+.tweet-add-option:hover{
+  background-color: rgba(29, 156, 240, 0.096);
+}
+
+.tweet-add-icon{
+  height: 20px;
+  width: 20px;
+  stroke-width: 2.5px;
+  color: rgb(29, 155, 240);
+}
+
+.post-button-container{
+  width: 80px;
+  margin-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+.post-button{
+  background-color: rgba(29, 156, 240, 0.58);
+  color: white;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  padding: 4px 18px 4px 18px;
+  border-radius: 26px;
+}
+
+.section-2{
+  height: 132px;
+  margin-left: 16px;
+  margin-right: 111px;
+  padding: 11px 15px 11px 15px;
+  margin-top: 16px;
+  border: 1px solid rgba(195, 195, 195, 0.221);
+  border-radius: 18px;
+}
+
+.subscription-container{
+  height: 137px;
+  width: 348px;
+  
+}
+
+.subscription-title{
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
+  font-weight: bolder;
+  font-size: 22px;
+  margin-bottom: 11.5px;
+}
+
+.subscription-info{
+  font-family: Roboto, system-ui, Arial;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.subscribe-button{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 16px 10px 16px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15.5px;
+  cursor: pointer;
+}
+
+.section-3{
+  margin-top: -33.4px;
+  border: 1px solid rgba(195, 195, 195, 0.178);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.post-count{
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgba(29, 156, 240, 0.785);
+  font-size: 16px;
+  
+}
+
+
+.section-3:hover{
+  background-color: rgba(195, 195, 195, 0.178);
+}
+
+.section-4{
+  height: 910.333px;
+  margin-left: 16px;
+  margin-right: 111px;
+  margin-top: 16px;
+  border: 1px solid rgba(195, 195, 195, 0.221);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.trend-header{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif, Arial;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 8px 15px 8px 15px;
+}
+
+.trend-list-container{
+  height: 65px;
+  padding: 8px 15px 8px 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer; 
+  transition: background-color 0.17s;
+}
+
+.trend-list-containers{
+  height: 40px;
+  padding: 8px 15px 8px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer; 
+  transition: background-color 0.17s;
+  font-size: 16px;
+  color: rgb(29, 155, 240);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif, Arial;
+}
+
+.trend-list-container:hover,
+.trend-list-containers:hover{
+  background-color: rgba(195, 195, 195, 0.169);
+}
+
+.more-icon{
+  height: 24px;
+}
+.more-icon:hover{
+ 
+}
+
+
+.more-icon-container{
+  height: 24px;
+  border-radius: 20px;
+  padding: 6px 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.more-icon-container:hover{
+  background-color: rgba(29, 156, 240, 0.094);
+}
+
+.trend-category{
+   flex: 1;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif, Arial;
+   font-size: 14px;
+   color: rgb(83, 100, 113);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin-right: -8px;
+   margin-top: -8px;
+}
+
+.trending{
+  margin-top: -4px 
+}
+
+.trend-name{
+  flex: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif, Arial;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: -11px;
+}
+
+.trend-post-count{
+  flex: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif, Arial;
+  color: rgb(83, 100, 113);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.section-5{
+  margin-top: -912.4px;
+  border: 1px solid rgba(195, 195, 195, 0.178);
+  height: 48px;
+  display: flex;
+  transition: background-color 0.15s;
+  cursor: pointer;
+  height:  625.667px;
+  padding: 11px 15px 11px 15px;
+}
+
+.post-container{
+  display: flex;
+}

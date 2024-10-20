@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home / X-clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css-styles/general.css">
+    <link rel="stylesheet" href="css-styles/header.css">
+    <link rel="stylesheet" href="css-styles/sidebar.css">
+    <link rel="stylesheet" href="css-styles/page.css">
+    <link rel="stylesheet" href="css-styles/bottombar.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,500,0,0" />
+
+    
+  </head>
+  <body>
+    <!--Container holding two headers-->
+    <div class="header-container">
+      <!--First header-->
+      <div class="first-header">
+        <div class="left-section">
+          <div class="for-you-page">For you</div>
+          <div class="scroll-bar"></div>
+        </div>
+        <div class="right-section">
+          <div class="following-page">Following</div>
+        </div>
+      </div>
+      <!--Second header-->
+      <div class="second-header">
+        <div class="searchbar-container">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="Search--Streamline-Lucide"><desc>Search Streamline Icon: https://streamlinehq.com</desc><path d="M2.875 10.541666666666668a7.666666666666667 7.666666666666667 0 1 0 15.333333333333334 0 7.666666666666667 7.666666666666667 0 1 0 -15.333333333333334 0" stroke-width="2"></path><path d="m20.125 20.125 -4.120833333333334 -4.120833333333334" stroke-width="2"></path></svg>
+          <input class="search-bar" type="text" placeholder="Search">         
+        </div> 
+      </div>
+    </div>
+  
+    <!--Side bar-->
+    <nav class="side-bar">
+      <div class="twitter-icon-container">
+       <img class="twitter-icon" src="Icons/x__twitter-logo_brandlogos.net_fxbde.png">
+      </div>
+     <!--put position absolute into position relative to create icons with tooltip-->
+     <!--Home Icon-->
+      <div class="profiles-icon-container">
+        <svg class="profiles-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Home-Fill--Streamline-Outlined-Fill---Material-Symbols">
+          <path fill="currentColor" d="M8 42V18L24 6L40 18V42H28V28H20V42H8Z" stroke-width="1"></path>
+        </svg>
+        <div class="home-count">&#183</div>
+        <div class="icon-tooltips">Home</div>
+      </div>
+     <!--Search Icon-->
+      <div class="sidebar-icon-container">
+        <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+        <div class="icons-tooltips">Explore</div>        
+      </div>
+     <!--Notification Icon-->
+      <div class="sidebar-icon-container">
+        <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" id="Bell--Streamline-Phosphor"><desc>Bell Streamline Icon: https://streamlinehq.com</desc><path d="M241.1481 185.8309c-6.6944 -11.5313 -16.6456 -44.1592 -16.6456 -86.7744 0 -74.283 -80.4137 -120.7099 -144.7447 -83.5684 -29.8561 17.2374 -48.2483 49.0935 -48.2483 83.5684 0 42.6273 -9.9632 75.2431 -16.6577 86.7744 -7.484 12.8339 1.7316 28.9568 16.5881 29.0212 0.0232 0.0001 0.0464 0.0001 0.0697 0.0001h49.2252c7.4367 36.3894 51.4773 51.0824 79.2731 26.4474 7.8191 -6.93 13.1774 -16.2108 15.2693 -26.4474h49.2253c14.8566 -0.02 24.1203 -16.1153 16.6746 -28.9714 -0.0096 -0.0167 -0.0193 -0.0333 -0.029 -0.0499ZM128.006 234.1515c-12.2648 -0.0038 -23.1961 -7.7359 -27.2844 -19.2993h54.5688c-4.0883 11.5634 -15.0196 19.2955 -27.2844 19.2993ZM31.5095 195.553c9.2878 -15.9702 19.2993 -52.9766 19.2993 -96.4965 0 -59.4264 64.331 -96.568 115.7958 -66.8547 23.8849 13.7899 38.5986 39.2748 38.5986 66.8547 0 43.4837 9.9874 80.4901 19.2993 96.4965Z" stroke-width="2"></path></svg>
+        <div class="notification-count">2</div>
+        <div class="icons-tooltips">Notifications</div>
+      </div>
+     <!--Inbox Icon-->
+      <div class="sidebar-icon-container">
+        <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+        </svg> 
+        <div class="icons-tooltips">Messages</div>       
+      </div>
+     <!--Grok Icon-->
+      <div class="profiles-icon-container">
+        <svg class="grok-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Grok-Line--Streamline-Mingcute"><desc>Grok Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="evenodd"><path d="m24 0 0 24 -24 0L0 0l24 0ZM12.5935 23.2578l-0.0116 0.0017 -0.071 0.0355 -0.019 0.0037 -0.0152 -0.0037 -0.071 -0.0355c-0.0099 -0.0031 -0.0187 -0.0005 -0.0236 0.0054l-0.0041 0.0109 -0.0171 0.4273 0.005 0.0204 0.011 0.0122 0.1036 0.074 0.0148 0.0039 0.0118 -0.0039 0.1036 -0.074 0.0126 -0.016 0.0034 -0.0166 -0.0171 -0.4273c-0.002 -0.0101 -0.0086 -0.0165 -0.0161 -0.018Zm0.2649 -0.1125 -0.0139 0.002 -0.1847 0.0924 -0.0099 0.0102 -0.0027 0.0112 0.0179 0.4295 0.0048 0.0128 0.0085 0.0071 0.2009 0.0927c0.0121 0.0037 0.0229 -0.0002 0.0285 -0.008l0.004 -0.014 -0.0341 -0.6147c-0.0024 -0.0119 -0.0103 -0.0195 -0.0193 -0.0212Zm-0.7154 0.002c-0.0098 -0.0049 -0.0208 -0.002 -0.0274 0.0053l-0.0057 0.0139 -0.0341 0.6147c-0.0007 0.0115 0.007 0.0207 0.0168 0.0234l0.0157 -0.0014 0.2009 -0.0927 0.0094 -0.0081 0.0039 -0.0118 0.0179 -0.4295 -0.0032 -0.0126 -0.0094 -0.0088 -0.1848 -0.0924Z" 
+          stroke-width="1"></path><path fill="currentColor" d="M3 5c0 -1.10457 0.89543 -2 2 -2l14 0c1.1046 0 2 0.89543 2 2l0 14c0 1.1046 -0.8954 2 -2 2L5 21c-1.10457 0 -2 -0.8954 -2 -2L3 5Zm16 0L5 5l0 14 14 0 0 -14Zm-3.4 2.2c0.4418 0.33137 0.5314 0.95817 0.2 1.4l-6 8c-0.33137 0.4418 -0.95817 0.5314 -1.4 0.2 -0.44183 -0.3314 -0.53137 -0.9582 -0.2 -1.4l6 -8c0.3314 -0.44183 0.9582 -0.53137 1.4 -0.2Z" stroke-width="1.5"></path></g>
+        </svg>
+        <div class="icon-tooltips">Grok</div>
+      </div>
+     <!--Community Icon-->
+      <div class="sidebar-icon-container">
+        <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+        </svg> 
+        <div class="icons-tooltips">Communities</div>       
+      </div>
+     <!--Profile Icon-->
+      <div class="sidebar-icon-container">
+        <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg> 
+        <div class="icons-tooltips">Profile</div>       
+      </div>
+     <!--More Icon-->
+      <div class="profiles-icon-container">
+        <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg> 
+        <div class="icon-tooltips">More</div>       
+      </div>
+     <!--Post Icon-->
+      <div class="post-icon-container">
+        <svg class="post-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Feather-Pen--Streamline-Plump"><desc>Feather Pen Streamline Icon: https://streamlinehq.com</desc><g id="feather-pen--change-edit-feather-modify-quill-write-writing">
+          <path id="Subtract" stroke="white" stroke-linecap="round" stroke-linejoin="round" d="M11.999 41a32.849 32.849 0 0 0 16.68 -4.52c0.665 -0.39 0.61 -1.348 -0.081 -1.691L25 33c3.303 0 10 -1.337 10 -1.337 7.147 -6.948 10.78 -16.97 9.848 -26.842a1.85 1.85 0 0 0 -1.67 -1.67A33.202 33.202 0 0 0 28 5.25S26.348 9.142 26 11l-2.024 -2.817a0.981 0.981 0 0 0 -1.309 -0.271C13.264 13.687 7 23.36 7 36.5" stroke-width="4.5"></path><path id="Vector 213" stroke="white" stroke-linecap="round" stroke-linejoin="round" d="M3 45c5 -14.5 21 -27 34 -34" stroke-width="4"></path></g>
+        </svg>
+        <svg class="add-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="Plus--Streamline-Lucide"><desc>Plus Streamline Icon: https://streamlinehq.com</desc>
+          <path d="M0.23 11.5H22.770000000000003" stroke-width="6"></path><path d="M11.5 0.23V22.770000000000003" stroke-width="6"></path>
+        </svg>       
+       <div class="post-icon-tooltips">Post</div>
+      </div> 
+     <!--Accounts Icon-->
+      <div class="account-icon-container">
+        <img class="account-icon" src="Icons/WhatsApp Image 2024-09-25 at 12.40.59_6a88b3dc.jpg">
+        <div class="account-tooltips">Accounts</div>
+      </div>
+    </nav>
+    
+    <!--Main page codes-->
+    <main class="page-grid">
+      <!--Section 1-->
+      <section class="section-1">
+        <div class="profile-image-container">
+          <div class="image-container">
+            <img class="profile-image" src="Icons/WhatsApp Image 2024-09-25 at 12.40.59_6a88b3dc.jpg">
+          </div>          
+        </div>
+        <div class="post-grid-container">
+          <div class="tweet-input-container">
+            <input class="tweet-input" placeholder="What is happening?!"></input>
+          </div>
+          <div class="tweet-add-on-container">
+            <div class="tweet-add-on">
+              <!--Image Icon-->
+              <button class="tweet-add-option">
+                <svg class="tweet-add-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Imagesmode--Streamline-Outlined----Material-Symbols">
+                  <path fill="#1d9bf0" d="M9 42C8.2 42 7.5 41.7 6.9 41.1C6.3 40.5 6 39.8 6 39V9C6 8.2 6.3 7.5 6.9 6.9C7.5 6.3 8.2 6 9 6H39C39.8 6 40.5 6.3 41.1 6.9C41.7 7.5 42 8.2 42 9V39C42 39.8 41.7 40.5 41.1 41.1C40.5 41.7 39.8 42 39 42H9ZM9 39H39V9H9V39ZM11.8 34.15H36.25L28.9 24.35L22.3 32.9L17.65 26.55L11.8 34.15ZM17.006 19.5C17.702 19.5 18.2917 19.2563 18.775 18.769C19.2583 18.2817 19.5 17.69 19.5 16.994C19.5 16.298 19.2563 15.7083 18.769 15.225C18.2817 14.7417 17.69 14.5 16.994 14.5C16.298 14.5 15.7083 14.7437 15.225 15.231C14.7417 15.7183 14.5 16.31 14.5 17.006C14.5 17.702 14.7437 18.2917 15.231 18.775C15.7183 19.2583 16.31 19.5 17.006 19.5Z" stroke-width="2.5"></path>
+                </svg>              
+              </button>
+              <!--Gif Icon-->
+              <button class="tweet-add-option">
+                <svg class="tweet-add-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Gif-Box--Streamline-Outlined----Material-Symbols">
+                  <path fill="#1d9bf0" d="M16.5 28H19.55C19.961 28 20.3053 27.85 20.583 27.55C20.861 27.25 21 26.9 21 26.5V24.5H19.5V26.5H16.5V21.5H20.9C20.9 21.1 20.7658 20.75 20.4975 20.45C20.2292 20.15 19.8967 20 19.5 20H16.5C16.075 20 15.7188 20.1437 15.4315 20.431C15.1438 20.7187 15 21.075 15 21.5V26.5C15 26.925 15.1438 27.2812 15.4315 27.5685C15.7188 27.8562 16.075 28 16.5 28ZM23.25 28H24.75V20H23.25V28ZM27 28H28.5V25H32V23.5H28.5V21.5H33V20H27V28ZM9 42C8.2 42 7.5 41.7 6.9 41.1C6.3 40.5 6 39.8 6 39V9C6 8.2 6.3 7.5 6.9 6.9C7.5 6.3 8.2 6 9 6H39C39.8 6 40.5 6.3 41.1 6.9C41.7 7.5 42 8.2 42 9V39C42 39.8 41.7 40.5 41.1 41.1C40.5 41.7 39.8 42 39 42H9ZM9 39H39V9H9V39Z" stroke-width="2.5"></path>
+                </svg>
+              </button>
+              <!--Poll Icon-->
+              <button class="tweet-add-option">
+                <svg class="tweet-add-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 22 27" version="1.1" id="Okrs--Streamline-Iconoir">
+                  <path d="M18.949944000000002 1.103904C17.639688 1.268904 16.627584000000002 2.317272 16.512504 3.6286320000000005C16.452816 4.308864 16.650816 5.006688 17.055672 5.5429200000000005C17.424576000000002 6.031536 18.025199999999998 6.427295999999999 18.624936 6.576984C18.91404 6.649128000000001 19.447608 6.666696 19.749936 6.614016C20.924976 6.409248000000001 21.843768 5.476704 22.033752 4.296C22.075944 4.033632000000001 22.064328 3.5883599999999998 22.008024 3.312144C21.78624 2.22384 20.928072 1.366344 19.834680000000002 1.1404800000000002C19.614768 1.095072 19.16712 1.0765440000000002 18.949944000000002 1.103904M18.978312000000003 2.111136C18.551568 2.189184 18.163176 2.42604 17.87976 2.78112C17.622432 3.1034880000000005 17.511936 3.429144 17.51232 3.864C17.51256 4.161096 17.535552000000003 4.289496000000001 17.632392 4.5349200000000005C17.834352 5.046576 18.353928 5.493 18.876312000000002 5.60364C19.092264 5.6493839999999995 19.462560000000003 5.649744 19.678056 5.604408C20.302728000000002 5.473008 20.837592 4.956096 21.003263999999998 4.323696C21.058392 4.11324 21.069624 3.6893040000000004 21.025272 3.492C20.954064000000002 3.175128 20.803392 2.893968 20.580000000000002 2.661048C20.218944 2.284608 19.852872 2.1166560000000003 19.356 2.099472C19.210800000000003 2.094456 19.040856 2.0997120000000002 18.978312000000003 2.111136M2.0094719999999997 3.391728C1.7265599999999999 3.48012 1.579992 3.802344 1.7012639999999999 4.069344C1.762656 4.2044880000000004 1.9252559999999999 4.338456 2.049144 4.355976C2.1035280000000003 4.363656 4.757976 4.366824 7.9479359999999994 4.362984L13.747872 4.356 13.851936 4.282944C14.04096 4.150224 14.120591999999998 3.896904 14.04024 3.684C14.007408000000002 3.597024 13.886472 3.4666080000000004 13.788 3.4119599999999997C13.721448 3.3750240000000002 13.276319999999998 3.371688 7.908 3.367728C3.5069040000000005 3.364488 2.078064 3.370296 2.0094719999999997 3.391728M18.949944000000002 9.095903999999999C18.2928 9.178656 17.67216 9.497424 17.231160000000003 9.978696C16.33332 10.958544 16.258296 12.478824000000001 17.055672 13.534920000000001C17.424576000000002 14.023536 18.025199999999998 14.419296 18.624936 14.568984000000002C18.91404 14.641128 19.447608 14.658696 19.749936 14.606015999999999C20.924976 14.401248 21.843768 13.468704 22.033752 12.288C22.075944 12.025632 22.064328 11.58036 22.008024 11.304143999999999C21.78624 10.21584 20.928072 9.358344 19.834680000000002 9.13248C19.614768 9.087072 19.16712 9.068544 18.949944000000002 9.095903999999999M18.978312000000003 10.103136000000001C18.551568 10.181184 18.163176 10.41804 17.87976 10.77312C17.622432 11.095488000000001 17.511936 11.421144 17.51232 11.856C17.51256 12.153096000000001 17.535552000000003 12.281496 17.632392 12.52692C17.834352 13.038576 18.353928 13.485 18.876312000000002 13.595640000000001C19.092264 13.641383999999999 19.462560000000003 13.641744 19.678056 13.596408000000002C20.182176 13.490376000000001 20.640672000000002 13.125744 20.887008 12.634968C21.078312 12.253872 21.110544 11.694816 20.9652 11.2788C20.779224000000003 10.746504 20.336016 10.322496 19.788 10.152672C19.599504 10.094256 19.170456 10.068 18.978312000000003 10.103136000000001M2.0094719999999997 11.383728C1.7265599999999999 11.47212 1.579992 11.794344 1.7012639999999999 12.061344C1.762656 12.196488 1.9252559999999999 12.330456 2.049144 12.347976000000001C2.1035280000000003 12.355656 4.757976 12.358824 7.9479359999999994 12.354984000000002L13.747872 12.348 13.851936 12.274944000000001C13.992576 12.176184000000001 14.067432 12.036048000000001 14.067432 11.87148C14.067432 11.663232 13.973088 11.505023999999999 13.788504 11.403768C13.721616000000001 11.367096 13.265352 11.363664 7.908 11.359728C3.5069040000000005 11.356488 2.078064 11.362295999999999 2.0094719999999997 11.383728M16.77312 17.131056C16.596552000000003 17.223288 16.50396 17.371944 16.504128 17.562888C16.5042 17.645616 16.520976 17.733312 16.54644 17.784C16.569648 17.830199999999998 17.06544 18.345912000000002 17.648208 18.93L18.707808 19.992 17.648208 21.054000000000002C17.06544 21.638088 16.569648 22.1538 16.54644 22.2C16.521216 22.250232 16.5042 22.338288 16.504128 22.419072C16.503816 22.746336 16.814784 22.981152 17.136456 22.896552C17.233632 22.870992 17.348736000000002 22.763736 18.32988 21.784608000000002L19.415760000000002 20.70096 20.50188 21.782976C21.500544 22.777872 21.597096 22.867416 21.701088 22.895352C22.102248 23.003088 22.462992 22.606608 22.30716 22.229232C22.281888000000002 22.168032 21.933287999999997 21.802680000000002 21.197256000000003 21.066L20.124192 19.992 21.197256000000003 18.918C21.933287999999997 18.18132 22.281888000000002 17.815968 22.30716 17.754768000000002C22.438368 17.436984000000002 22.186224000000003 17.064263999999998 21.84 17.064263999999998C21.640608 17.064263999999998 21.638376 17.06616 20.501736 18.199848L19.415496 19.283304 18.341736 18.210504C17.605248 17.47464 17.239968 17.126112 17.178768 17.100839999999998C17.044776 17.04552 16.91892 17.054904 16.77312 17.131056M2.0094719999999997 19.375728C1.727136 19.463928 1.579992 19.786368 1.7007599999999998 20.052216C1.7554079999999999 20.17248 1.891224 20.293752 2.009592 20.327952C2.0739360000000002 20.346528000000003 3.7786320000000004 20.352048 7.923935999999999 20.347032000000002L13.747872 20.34 13.851936 20.266944000000002C13.992576 20.168184 14.067432 20.028048 14.067432 19.86348C14.067432 19.655231999999998 13.973088 19.497024 13.788504 19.395768C13.721616000000001 19.359096 13.265352 19.355664 7.908 19.351728C3.5069040000000005 19.348488 2.078064 19.354296 2.0094719999999997 19.375728" 
+                  stroke-width="2" fill="currentColor" fill-rule="evenodd"></path>
+                </svg>
+              </button>
+              <!--Emoji Icon-->
+              <button class="tweet-add-option">
+                <svg class="tweet-add-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-emoji-wink" viewBox="0 0 16 16" id="Emoji-Wink--Streamline-Bootstrap"><desc>Emoji Wink Streamline Icon: https://streamlinehq.com</desc><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" stroke-width="1">
+                  </path><path d="M4.285 9.567a0.5 0.5 0 0 1 0.683 0.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032 -1.75 0.5 0.5 0 1 1 0.866 0.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 -3.898 -2.25 0.5 0.5 0 0 1 0.183 -0.683M7 6.5C7 7.328 6.552 8 6 8s-1 -0.672 -1 -1.5S5.448 5 6 5s1 0.672 1 1.5m1.757 -0.437a0.5 0.5 0 0 1 0.68 0.194 0.93 0.93 0 0 0 0.813 0.493c0.339 0 0.645 -0.19 0.813 -0.493a0.5 0.5 0 1 1 0.874 0.486A1.93 1.93 0 0 1 10.25 7.75c-0.73 0 -1.356 -0.412 -1.687 -1.007a0.5 0.5 0 0 1 0.194 -0.68" stroke-width="2.5"></path>
+                </svg>
+              </button>
+              <!--Schedule Icon-->
+              <button class="tweet-add-option">
+                <svg class="tweet-add-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="Calendar-Clock--Streamline-Lucide"><desc>Calendar Clock Streamline Icon: https://streamlinehq.com</desc><path d="M20.623333333333335 6.133333333333334V4.523333333333333C20.623333333333335 3.3377791666666665 19.662220833333333 2.376666666666667 18.47666666666667 2.376666666666667H3.45C2.2644458333333333 2.376666666666667 1.3033333333333335 3.3377791666666665 1.3033333333333335 4.523333333333333V19.55C1.3033333333333335 20.73565 2.2643500000000003 21.696762500000002 3.45 21.69666666666667H7.206666666666666" stroke-width="1.5"></path><path d="M15.256666666666668 0.23V4.523333333333333" stroke-width="2"></path><path d="M6.67 0.23V4.523333333333333" stroke-width="2"></path><path d="M1.3033333333333335 8.816666666666666H6.67" stroke-width="2"></path><path d="M16.866666666666667 16.866666666666667L15.256666666666668 15.578666666666667V13.11" stroke-width="2"></path><path d="M8.816666666666666 15.256666666666668C8.816666666666666 20.214220833333332 14.183333333333335 23.312608333333333 18.47666666666667 20.833879166666666C20.469233333333335 19.683495833333335 21.69666666666667 17.557433333333332 21.69666666666667 15.256666666666668C21.69666666666667 10.2991125 16.33 7.200725 12.036666666666667 9.679454166666668C10.0441 10.829837500000002 8.816666666666666 12.9559 8.816666666666666 15.256666666666668" 
+                  stroke-width="2"></path>
+                </svg>
+              </button>
+              <!--Location Icon-->
+              <button class="tweet-add-option">
+                <svg class="tweet-add-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-0.75 -0.75 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="Map-Pin--Streamline-Lucide"><desc>Map Pin Streamline Icon: https://streamlinehq.com</desc>
+                  <path d="M18.75 9.375c0 5.625 -7.5 11.25 -7.5 11.25s-7.5 -5.625 -7.5 -11.25a7.5 7.5 0 0 1 15 0Z" stroke-width="1.5"></path><path d="M8.4375 9.375a2.8125 2.8125 0 1 0 5.625 0 2.8125 2.8125 0 1 0 -5.625 0" stroke-width="1.5"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="post-button-container">
+             <button class="post-button">Post</button> 
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section 2-->
+      <section class="section-2">
+        <div class="subscription-container">
+          <div class="subscription-title">Subscribe to Premium</div>
+          <div class="subscription-info">Subscribe to unlock new features and if eligible, recieve a share of ads revenue.</div>
+          <button class="subscribe-button">Subscribe</button>
+        </div>        
+      </section>
+      <!--Section 3-->
+      <div class="section-3">
+        <a class="post-count">Show 350 posts</a>
+      </div>
+      <!--Section 4-->
+      <div class="section-4">
+        <div class="trend-header">Trends for you</div>
+        <div class="trend-list-container">
+          <div class="trend-category">
+            <div class="trending">Trending in Nigeria</div>
+            <div class="more-icon-container">
+              <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-1-Line--Streamline-Mingcute"><desc>More 1 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="currentColor" d="M6 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z" stroke-width="1"></path></g></svg>
+            </div>
+          </div>
+          <div class="trend-name">The 3</div>
+          <div class="trend-post-count">1.03M posts</div>
+        </div>
+
+        <div class="trend-list-container">
+          <div class="trend-category">
+            <div class="trending">Music &#183 Trending </div>
+            <div class="more-icon-container">
+              <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-1-Line--Streamline-Mingcute"><desc>More 1 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="currentColor" d="M6 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z" stroke-width="1"></path></g></svg>
+            </div>
+          </div>
+          <div class="trend-name">Wizkid</div>
+          <div class="trend-post-count">899k posts</div>
+        </div>
+
+        <div class="trend-list-container">
+          <div class="trend-category">
+            <div class="trending">Trending in Nigeria</div>
+            <div class="more-icon-container">
+              <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-1-Line--Streamline-Mingcute"><desc>More 1 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="currentColor" d="M6 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z" stroke-width="1"></path></g></svg>
+            </div>
+          </div>
+          <div class="trend-name">Tony Elumelu</div>
+          <div class="trend-post-count">2,524 posts</div> 
+        </div>
+
+        <div class="trend-list-container">
+          <div class="trend-category">
+            <div class="trending">Music &#183 Trending</div>
+            <div class="more-icon-container">
+              <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-1-Line--Streamline-Mingcute"><desc>More 1 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="currentColor" d="M6 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z" stroke-width="1"></path></g></svg>
+            </div>
+          </div>
+          <div class="trend-name">Big Wiz</div>
+          <div class="trend-post-count">399k posts</div>
+        </div>
+
+        <div class="trend-list-container">
+          <div class="trend-category">
+            <div class="trending">Sports &#183 Trending</div>
+            <div class="more-icon-container">
+              <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-1-Line--Streamline-Mingcute"><desc>More 1 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="currentColor" d="M6 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z" stroke-width="1"></path></g></svg>
+            </div>
+          </div>
+          <div class="trend-name">Bayern</div>
+          <div class="trend-post-count">64.5k posts</div>
+        </div>
+
+        <div class="trend-list-container">
+          <div class="trend-category">
+            <div class="trending">Trending in Nigeria</div>
+            <div class="more-icon-container">
+              <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-1-Line--Streamline-Mingcute"><desc>More 1 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="currentColor" d="M6 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z" stroke-width="1"></path></g></svg>
+            </div>
+          </div>
+          <div class="trend-name">Linda ikeji</div>
+          <div class="trend-post-count">10.8k posts</div>
+        </div>
+
+        <div class="trend-list-container">
+          <div class="trend-category">
+            <div class="trending">Music &#183 Trending</div>
+            <div class="more-icon-container">
+              <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-1-Line--Streamline-Mingcute"><desc>More 1 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="currentColor" d="M6 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z" stroke-width="1"></path></g></svg>
+            </div>
+          </div>
+          <div class="trend-name">Burna</div>
+          <div class="trend-post-count">25.2k posts</div>
+        </div>
+
+        <div class="trend-list-container">
+          <div class="trend-category">
+            <div class="trending">Music &#183 Trending</div>
+            <div class="more-icon-container">
+              <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-1-Line--Streamline-Mingcute"><desc>More 1 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="currentColor" d="M6 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z" stroke-width="1"></path></g></svg>
+            </div>
+          </div>
+          <div class="trend-name">Frogido</div>
+          <div class="trend-post-count">56.2k posts</div>
+        </div>
+
+        <div class="trend-list-container">
+          <div class="trend-category">
+            <div class="trending">Music &#183 Trending</div>
+            <div class="more-icon-container">
+              <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-1-Line--Streamline-Mingcute"><desc>More 1 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="currentColor" d="M6 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z" stroke-width="1"></path></g></svg>
+            </div>
+          </div>
+          <div class="trend-name">Jada</div>
+          <div class="trend-post-count">26k posts</div>
+        </div>
+
+        <div class="trend-list-container">
+          <div class="trend-category">
+            <div class="trending">Sports &#183 Trending</div>
+            <div class="more-icon-container">
+              <svg class="more-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="More-1-Line--Streamline-Mingcute"><desc>More 1 Line Streamline Icon: https://streamlinehq.com</desc><g fill="none" fill-rule="nonzero"><path d="M24 0v24H0V0h24ZM12.593 23.258l-0.011 0.002 -0.071 0.035 -0.02 0.004 -0.014 -0.004 -0.071 -0.035c-0.01 -0.004 -0.019 -0.001 -0.024 0.005l-0.004 0.01 -0.017 0.428 0.005 0.02 0.01 0.013 0.104 0.074 0.015 0.004 0.012 -0.004 0.104 -0.074 0.012 -0.016 0.004 -0.017 -0.017 -0.427c-0.002 -0.01 -0.009 -0.017 -0.017 -0.018Zm0.265 -0.113 -0.013 0.002 -0.185 0.093 -0.01 0.01 -0.003 0.011 0.018 0.43 0.005 0.012 0.008 0.007 0.201 0.093c0.012 0.004 0.023 0 0.029 -0.008l0.004 -0.014 -0.034 -0.614c-0.003 -0.012 -0.01 -0.02 -0.02 -0.022Zm-0.715 0.002a0.023 0.023 0 0 0 -0.027 0.006l-0.006 0.014 -0.034 0.614c0 0.012 0.007 0.02 0.017 0.024l0.015 -0.002 0.201 -0.093 0.01 -0.008 0.004 -0.011 0.017 -0.43 -0.003 -0.012 -0.01 -0.01 -0.184 -0.092Z" stroke-width="1"></path><path fill="currentColor" d="M6 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0 -3Z" stroke-width="1"></path></g></svg>
+            </div>
+          </div>
+          <div class="trend-name">Ademola Lookman</div>
+          <div class="trend-post-count">10.2k posts</div>
+        </div>
+
+        <div class="trend-list-containers">
+          <div>Show more</div>
+        </div>
+      </div>
+      <!--Bottom bar-->
+      <div class="bottom-bar">
+        <div class="message">Messages</div>
+        <div class="message-icon-container">
+          <div class="inbox-container">
+            <svg class="inbox-plus" xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" id="Mail-Plus--Streamline-Lucide"><desc>Mail Plus Streamline Icon: https://streamlinehq.com</desc>
+            <path d="M21.745445833333335 12.012229166666666V4.840445833333334C21.745445833333335 3.70875 20.828033333333334 2.7913375 19.696337500000002 2.7913375H3.3036624999999997C2.1719666666666666 2.7913375 1.2545541666666666 3.70875 1.2545541666666666 4.840445833333334V17.134999999999998C1.2545541666666666 18.262 2.1766625000000004 19.184108333333334 3.3036624999999997 19.184108333333334H11.5" stroke-width="2.2">
+            </path><path d="M21.745445833333335 5.865L12.555316666666668 11.704891666666668C11.909879166666666 12.109308333333333 11.090120833333334 12.109308333333333 10.444683333333334 11.704891666666668L1.2545541666666666 5.865" stroke-width="2.2"></path><path d="M18.671783333333334 15.085891666666667V21.233216666666667" stroke-width="2.2"></path><path d="M15.598216666666666 18.15955416666667H21.745445833333335" stroke-width="2.2"></path></svg>
+            <div class="message-tooltip">New message</div>
+          </div>
+          <div class="double-up-container">
+            <svg class="double-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" id="Chevron-Double-Up--Streamline-Heroicons"><desc>Chevron Double Up Streamline Icon: https://streamlinehq.com</desc><path fill-rule="evenodd" d="M11.2178 10.1616C11.6352 9.7447 12.3114 9.7447 12.7288 10.1616L23.4197 20.8525C24.0218 21.4135 23.7908 22.416 23.0039 22.6569C22.6127 22.7767 22.1876 22.6627 21.9087 22.3635L11.9733 12.4281L2.0379 22.3635C1.4358 22.9245 0.4521 22.6234 0.2673 21.8214C0.1876 21.4754 0.2848 21.1123 0.5269 20.8525L11.2178 10.1616Z" clip-rule="evenodd" stroke-width="2">
+            </path><path fill-rule="evenodd" d="M11.2178 1.6089C11.6352 1.192 12.3114 1.192 12.7288 1.6089L23.4197 12.2998C24.0218 12.8608 23.7908 13.8633 23.0039 14.1042C22.6127 14.224 22.1876 14.11 21.9087 13.8108L11.9733 3.8754L2.0379 13.8108C1.4358 14.3718 0.4521 14.0707 0.2673 13.2687C0.1876 12.9227 0.2848 12.5596 0.5269 12.2998L11.2178 1.6089Z" clip-rule="evenodd" stroke-width="2"></path></svg>
+            <div class="expand-tooltip">Expand</div>
+          </div>
+        </div>
+      </div>
+      <!--Section 5-->
+      <div class="section-5">
+        <div class="post-container">
+          <div>1</div>
+          <div>2</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

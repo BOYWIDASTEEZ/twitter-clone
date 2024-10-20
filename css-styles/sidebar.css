@@ -1,0 +1,259 @@
+.side-bar{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  z-index: 300;
+  padding-top: 2px;
+  border: 1px solid rgba(195, 195, 195, 0.221);
+}
+
+.twitter-icon-container{
+  height: 35px;
+  margin-bottom: 3px;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 29px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.twitter-icon-container:hover,
+.sidebar-icon-container:hover,
+.profiles-icon-container:hover,
+.account-icon-container:hover{
+  background-color: rgba(185, 202, 211, 0.322);
+}
+
+.twitter-icon{
+  height: 35px;
+}
+
+
+.home-count{
+  position: absolute;
+  top: -26px;
+  right: 4px;
+  color: rgb(29, 155, 240);
+  font-size: 65px;
+  border-radius: 7px;
+}
+
+.notification-count{
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  border-radius: 12px;
+  padding-left: 5.5px;
+  padding-right: 5.5px;
+  padding-bottom: 1.5px;
+  padding-top: 2px;
+}
+
+.sidebar-icon-container{
+  height: 24px;
+  margin-bottom: 6px;
+  margin-right: 22px;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 40px;
+  transition: background-color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.profiles-icon-container{
+  height: 27.5px;
+  margin-bottom: 3px;
+  margin-right: 22px;
+  cursor: pointer;
+  padding: 10px 8px 10px 8px;
+  border-radius: 46px;
+  transition: background-color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sidebar-icon{
+  height: 26px;
+  stroke-width: 2;
+}
+
+.profiles-icon{
+  height: 33px;
+  stroke-width: 1.5;
+}
+
+.more-icon{
+  height: 28px;
+  stroke-width: 2;
+  margin-right: 2px;
+}
+
+.grok-icon{
+  height: 30px;
+  stroke-width: 1.6;
+  margin-right: 2px;
+}
+
+
+.post-icon-container{
+  margin-bottom: 3px;
+  margin-top: 4.5px;
+  margin-right: 21px;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: background-color 0.15s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 55px;
+  background: rgb(29, 155, 240);
+}
+
+.post-icon{
+  height: 21.5px;
+  margin-left: 7px;
+}
+
+.add-icon{
+  color: white;
+  position: absolute;
+  top: 13.5px;
+  left: 16px;
+  height: 8px;
+}
+
+.icon-tooltips{
+  position: absolute;
+  bottom: -26px;
+  font-size: 12px;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.621);
+  color: white;
+  border-radius: 2px;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity:0;
+  z-index: 1;
+  visibility: hidden;
+  text-align: center;
+  transition: visibility 0s linear 0.5s;
+}
+
+.icons-tooltips{
+  position: absolute;
+  bottom: -26px;
+  font-size: 12px;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.621);
+  color: white;
+  border-radius: 2px;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+  padding-left: 3.5px;
+  padding-right: 3.5px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 2;
+  visibility: hidden;
+  text-align: center;
+  transition: visibility 0s linear 0.5s;
+}
+
+.post-icon-tooltips{
+  position: absolute;
+  bottom: -24.5px;
+  font-size: 12px;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.621);
+  color: white;
+  border-radius: 2px;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity:0;
+  z-index: 1;
+  visibility: hidden;
+  text-align: center;
+  transition: visibility 0s linear 0.5s;
+}
+
+.post-icon-container:hover{
+  background-color: rgba(11, 133, 215, 0.943)
+}
+
+.profiles-icon-container:hover .icon-tooltips,
+.sidebar-icon-container:hover .icons-tooltips,
+.post-icon-container:hover .post-icon-tooltips,
+.account-icon-container:hover .account-tooltips{
+  visibility: visible;
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.account-icon-container{
+  margin-top: 28px;
+  margin-right: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: background-color 0.15s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  width: 64px;
+}
+
+.account-icon{
+  height: 41.8px;
+  border-radius: 20px;
+}
+
+.account-tooltips{
+  position: absolute;
+  top: -24.5px;
+  font-size: 12px;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.621);
+  color: white;
+  border-radius: 2px;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity:0;
+  z-index: 1;
+  visibility: hidden;
+  text-align: center;
+  transition: visibility 0s linear 0.5s;
+}
